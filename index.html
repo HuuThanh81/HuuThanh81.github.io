@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, maximum-scale=1.0, initial-scale=1.0, user-scalable=no">
+    <title>Search Students</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <div>
+    <div class="search" >
+      <label for="signin">Search for Students ?</label>
+      <div id="wrapper">
+        <div id="arrow"></div>
+        <input placeholder="ID Student" type="number" id="IDStudent" value=""/>
+      </div>
+      <button type="submit" value="Searching" onclick="myFunction()">
+        <span>
+          Submit
+        </span>
+      </button>
+    </div>
+    <div class="about">
+      <div class="col-left">
+        <img id="ImgStudent" alt="Oops! find not found...." >
+      </div>
+        <div class="col-right"></div>
+      </div>
+    <div id="hint">Click on the tabs</div>
+  </div>
+  <script>
+    function myFunction(){
+      var id = document.getElementById("IDStudent").value;
+      var linkImg ="http://online.dlu.edu.vn/HinhSV/" + id + ".jpg";
+      document.getElementById("ImgStudent").src = linkImg;
+    }
+  </script>
+</body>
+</html>
+
+
+
