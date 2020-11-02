@@ -24,7 +24,7 @@ body {
 #signin:checked ~ button span { transform: translate3d(0,-72px,0); }
 
 .search {
-  width: 450px;
+  width: 30%;
   height: 370px;
   margin: 15% 0px 0px 10%;
   float: left;
